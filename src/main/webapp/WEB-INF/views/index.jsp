@@ -12,7 +12,7 @@
 <body>
 	<nav class="navbar-default mt-2">
 		<div class="container-fluid">
-			<a href="/category" class="btn btn-info navbar-btn">Categories</a> <a href="/product"
+			<a href="/categories" class="btn btn-info navbar-btn">Categories</a> <a href="/product"
 				class="btn btn-success navbar-btn">Products</a> <a href="/users"
 				class="btn btn-warning navbar-btn">Users</a>
 		</div>
