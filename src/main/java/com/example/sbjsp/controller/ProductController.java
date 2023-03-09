@@ -76,11 +76,7 @@ public class ProductController {
 
 	@GetMapping("/delete/{id}")
 	public ModelAndView delete(@PathVariable("id") int id) {
-		for (Product product : listproduct) {
-			if (product.getId() == id) {
-				listproduct.remove(product);
-			}
-		}
+		listproduct.removeIf(e -> e.getId() == id);
 		ModelAndView mav = new ModelAndView("redirect:/product");
 		mav.addObject("listproduct", listproduct);
 		return mav;

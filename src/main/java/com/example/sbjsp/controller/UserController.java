@@ -78,11 +78,7 @@ public class UserController {
 
 	@GetMapping("/delete/{id}")
 	public ModelAndView delete(@PathVariable("id") Long id) {
-		for (User user : users) {
-			if (user.getId() == id) {
-				users.remove(user);
-			}
-		}
+		users.removeIf(e -> e.getId().equals(id));
 		ModelAndView mav = new ModelAndView("redirect:/users");
 		mav.addObject("list", users);
 		return mav;
