@@ -12,7 +12,7 @@
 	rel="stylesheet">
 </head>
 <body>
-	<a href="/categories/insert"><button type="button"
+	<a href="categories/insert"><button type="button"
 			class="btn btn-success custom-width">Insert</button></a>
 	<table class="table table-hover table-bordered">
 		<thead>
@@ -32,10 +32,10 @@
 					<td>${category.code}</td>
 					<td>${category.name}</td>
 					<td>${category.description}</td>
-					<td class="text-center"><a href="/categories/edit/${category.id}"><button
+					<td class="text-center"><a href="categories/edit/${category.id}"><button
 								class="btn btn-primary custom-width">Edit</button></a></td>
 					<td class="text-center"><a
-						href="/categories/delete/${category.id}"><button
+						href="categories/delete/${category.id}"><button
 								class="btn btn-danger custom-width">Remove</button></a></td>
 				</tr>
 			</c:forEach>

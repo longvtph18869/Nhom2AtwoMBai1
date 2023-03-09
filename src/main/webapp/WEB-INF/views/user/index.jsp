@@ -12,7 +12,7 @@
 	rel="stylesheet">
 </head>
 <body>
-	<a href="/users/insert"><button type="button"
+	<a href="users/insert"><button type="button"
 			class="btn btn-success custom-width">Insert</button></a>
 	<table class="table table-hover table-bordered">
 		<thead>
@@ -34,10 +34,10 @@
 					<fmt:formatDate value="${user.birthDay}" var="birthday"
 						pattern="dd-MM-yyyy" />
 					<td>${birthday}</td>
-					<td class="text-center"><a href="/users/edit/${user.id}"><button
+					<td class="text-center"><a href="users/edit/${user.id}"><button
 								class="btn btn-primary custom-width">Edit</button></a></td>
 					<td class="text-center"><a
-						href="/users/delete/${user.id}"><button
+						href="users/delete/${user.id}"><button
 								class="btn btn-danger custom-width">Remove</button></a></td>
 				</tr>
 			</c:forEach>

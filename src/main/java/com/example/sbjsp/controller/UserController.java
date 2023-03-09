@@ -77,7 +77,7 @@ public class UserController {
 	}
 
 	@GetMapping("/delete/{id}")
-	public ModelAndView insert(@PathVariable("id") Long id) {
+	public ModelAndView delete(@PathVariable("id") Long id) {
 		for (User user : users) {
 			if (user.getId() == id) {
 				users.remove(user);

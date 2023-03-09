@@ -12,7 +12,7 @@
 	rel="stylesheet">
 </head>
 <body>
-	<a href="/product/add"><button type="button"
+	<a href="product/add"><button type="button"
 			class="btn btn-success custom-width">Insert</button></a>
 	<table class="table table-hover table-bordered">
 		<thead>
@@ -28,10 +28,10 @@
 					<td>${product.id}</td>
 					<td>${product.productName}</td>
 					<td>${product.productAmount}</td>
-					<td class="text-center"><a href="/product/edit/${product.id}"><button
+					<td class="text-center"><a href="product/edit/${product.id}"><button
 								class="btn btn-primary custom-width">Edit</button></a></td>
 					<td class="text-center"><a
-						href="/product/delete/${product.id}"><button
+						href="product/delete/${product.id}"><button
 								class="btn btn-danger custom-width">Remove</button></a></td>
 				</tr>
 			</c:forEach>
