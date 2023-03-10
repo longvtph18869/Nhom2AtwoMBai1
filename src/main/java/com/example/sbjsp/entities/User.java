@@ -2,11 +2,28 @@ package com.example.sbjsp.entities;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+
+	@Column
 	private String fullName;
+
+	@Column
 	private int gender;
+
+	@Column
 	private Date birthDay;
 
 	public Long getId() {
@@ -44,6 +61,13 @@ public class User {
 	public User(Long id, String fullName, int gender, Date birthDay) {
 		super();
 		this.id = id;
+		this.fullName = fullName;
+		this.gender = gender;
+		this.birthDay = birthDay;
+	}
+
+	public User(String fullName, int gender, Date birthDay) {
+		super();
 		this.fullName = fullName;
 		this.gender = gender;
 		this.birthDay = birthDay;
